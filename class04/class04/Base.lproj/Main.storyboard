@@ -35,23 +35,46 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.78805025006984919" green="1" blue="0.91663746863504614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="h8w-tc-XoJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068.1159420289855" y="85.714285714285708"/>
+            <point key="canvasLocation" x="1066.6666666666667" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--My Browser View Controller-->
         <scene sceneID="4EX-xK-mw0">
             <objects>
-                <viewController id="yDv-XZ-i7Q" sceneMemberID="viewController">
+                <viewController id="yDv-XZ-i7Q" customClass="MyBrowserViewController" customModule="class04" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GcD-Qa-nR5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.719349704638516" green="1" blue="0.067051794445196267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GM-9P-rkJ">
+                                <rect key="frame" x="344" y="332" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="96w-qd-0Na"/>
+                                    <constraint firstAttribute="width" constant="50" id="HsS-5H-6WC"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-Pr-KeY">
+                                <rect key="frame" x="20" y="332" width="316" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76957444705249989" green="1" blue="0.54774264733167333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="0GM-9P-rkJ" firstAttribute="centerY" secondItem="qvK-Pr-KeY" secondAttribute="centerY" id="Dj3-El-cnY"/>
+                            <constraint firstItem="qvK-Pr-KeY" firstAttribute="leading" secondItem="nff-KT-saL" secondAttribute="leading" constant="20" id="Fgt-uP-nlt"/>
+                            <constraint firstItem="nff-KT-saL" firstAttribute="bottom" secondItem="0GM-9P-rkJ" secondAttribute="bottom" constant="500" id="Qax-kg-7U6"/>
+                            <constraint firstItem="0GM-9P-rkJ" firstAttribute="leading" secondItem="qvK-Pr-KeY" secondAttribute="trailing" constant="8" id="Voz-3h-PN1"/>
+                            <constraint firstItem="nff-KT-saL" firstAttribute="trailing" secondItem="0GM-9P-rkJ" secondAttribute="trailing" constant="20" id="xBN-k5-hDj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nff-KT-saL"/>
                     </view>
                 </viewController>
